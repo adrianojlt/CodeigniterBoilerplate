@@ -1,0 +1,10 @@
+Options +FollowSymlinks -Indexes
+DirectoryIndex index.php
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteBase /Myco
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond $1 !^(index\.php|assets|themes|robots\.txt)
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>

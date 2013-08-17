@@ -1,0 +1,23 @@
+.sidebar {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-right: 1px solid #DDDDDD;
+    float: left;
+    height: 100%;
+}
+
+.sidebar ul {
+	list-style: none outside none;
+	margin: 0;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #F5F5F5;
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    color: #404040;
+    font-weight: bold;
+}
