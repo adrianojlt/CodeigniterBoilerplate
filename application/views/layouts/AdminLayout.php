@@ -1,6 +1,6 @@
 <?php
-
-
+	//$this->firephp->log(base_url('admin'),'baseurl');
+	//$this->firephp->log(site_url('admin'),'site_url');
 ?>
 
 <!DOCTYPE html>
@@ -12,27 +12,44 @@
 
 	<title>Admin</title>
 
-	<!-- bootstrap adjustment -->
+    <?php
+		//$this->carabiner->display('jquery');
+		//$this->carabiner->display('bootstrap2.3.1');
+		//$this->carabiner->display('bootstrap3');
+		foreach ($assets as $asset) {$this->carabiner->display($asset,null); }
+		$this->carabiner->display();
+    ?>
+
+    <!-- bootstrap adjustment -->
 	<style type="text/css">
 		body {
-        	padding-top: 60px;
-        	padding-bottom: 40px;
-      }
-      /* .sidebar-nav {padding: 9px 0; } */
+        	/*padding-top: 40px;*/
+        	/*padding-bottom: 40px;*/
+        	min-height: 2000px;
+      	}
+
+      	.navbar-static-top {margin-bottom: 19px; }
+
+      	/* .sidebar-nav {padding: 9px 0; } */
     </style>
 
-	<?php
-		$this->carabiner->display('jquery');
-		$this->carabiner->display('bootstrap2.3.1');
-		$this->carabiner->display();
-	?>
-	
+    <script> window.ajaxUrl = "<?php echo site_url('admin');?>"; </script>
+
 </head>
 
 <body>
+
 	<?php echo $template['partials']['AdminNavBar']; ?>
-	<?php echo $template['partials']['AdminSideBar']; ?>
+	<?php //echo $template['partials']['AdminSideBar']; ?>
 	<?php echo $template['body']; ?>
+
+	<?php
+		//$this->carabiner->display('jquery');
+		//$this->carabiner->display('bootstrap2.3.1');
+		//$this->carabiner->display('bootstrap3');
+		//$this->carabiner->display();
+	?>
+
 </body>
 
 </html>

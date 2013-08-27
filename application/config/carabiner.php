@@ -123,6 +123,42 @@ $config['minify_css'] = TRUE;
 $config['force_curl'] = FALSE;
 
 
+/*
+|--------------------------------------------------------------------------
+| My Local Assets Groups
+|
+|	> jQuery 
+|	> jQuery UI 
+|	> yaml
+|	> textExt
+|	> jtable
+|	> validationEngine
+|	> fullcalendar
+|--------------------------------------------------------------------------
+*/
+
+/**
+ * jTable
+ * 
+ * jTable is a jQuery plugin that is used to create AJAX based CRUD tables without coding HTML or Javascript.
+ * Standard theme - BLUE 
+ * 
+ * version 2.3.0
+ * 
+ * jtable.org
+ */
+$config['groups']['jtable'] = array(
+
+	'css'	=> array(
+		array('../libs/jtable.2.3.0/themes/metro/lightgray/jtable.css')
+		//array('../libs/jtable.2.3.0/themes/jqueryui/jtable_jqueryui.css')
+	),
+
+	'js'	=> array(
+		array('../libs/jtable.2.3.0/jquery.jtable.js','../libs/jtable.2.3.0/jquery.jtable.min.js',true,false)
+	)
+);
+
 
 
 
@@ -188,10 +224,10 @@ $config['groups']['bootstrap2.3.2'] = array (
 $config['groups']['bootstrap3'] = array (
 		
 	'js'	=> array (
-		array('http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.js','http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js',true,false)
+		array('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.js','http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js',true,false)
 	),
 	'css'	=> array (
-		array('http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.css','screen','http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css',true,false),
+		array('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.css','screen','http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css',true,false),
 	)
 );
 
@@ -241,12 +277,14 @@ $config['groups']['jquery'] = array(
 
 // jQuery UI (latest, as of 1.xx)
 $config['groups']['jqueryui'] = array(
+
+	'css' => array(
+		array('http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/cupertino/jquery-ui.css')	
+	),
 	
 	'js' => array(
-	
-		array('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js', 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', TRUE, FALSE),
+		//array('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js', 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', TRUE, FALSE),
 		array('http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.js', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js', TRUE, FALSE)
-	
 	)
 );
 

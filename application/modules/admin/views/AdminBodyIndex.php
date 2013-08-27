@@ -1,6 +1,6 @@
-<div id="container" class="container-fluid">
-	<div class="row-fluid">
-		<h1>Welcome to Admin</h1>
+<div id="container" class="container">
+	<div class="row">
+		<h5>Welcome to Admin</h5>
 	</div>
 </div>
 
