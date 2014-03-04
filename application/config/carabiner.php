@@ -72,7 +72,7 @@ $config['cache_dir'] = 'assets/cache/';
 |
 */
 
-$config['dev'] = TRUE;
+$config['dev'] = false;
 
 
 /*
@@ -84,7 +84,7 @@ $config['dev'] = TRUE;
 |
 */
 
-$config['combine'] = TRUE;
+$config['combine'] = false;
 
 
 /*
@@ -96,7 +96,7 @@ $config['combine'] = TRUE;
 |
 */
 
-$config['minify_js'] = TRUE;
+$config['minify_js'] = false;
 
 
 /*
@@ -108,7 +108,7 @@ $config['minify_js'] = TRUE;
 |
 */
 
-$config['minify_css'] = TRUE;
+$config['minify_css'] = false;
 
 /*
 |--------------------------------------------------------------------------
@@ -270,6 +270,7 @@ $config['groups']['jquery'] = array(
 	'js' => array(
 	
 		array('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js', 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', TRUE, FALSE)
+		//array('http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', TRUE, FALSE)
 	
 	)
 );

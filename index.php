@@ -57,7 +57,8 @@ if (defined('ENVIRONMENT'))
  *
  */
 	//$system_path = 'system';
-	$system_path = '../../CI/CI_2.1.4_BASE/system';
+	//$system_path = '../../CI/CI_2.1.4_BASE/system';
+	$system_path = '../codeigniter_2.1.4/system';
 
 /*
  *---------------------------------------------------------------
