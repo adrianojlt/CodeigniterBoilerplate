@@ -1,11 +1,11 @@
 <?php
 
 	$param = array(
-		'active_class' 			=>'active',
-		'use_titles'			=>false,
+		'active_class' 			=> 'active',
+		'use_titles'			=> false,
 		//'container_tag_id'	=> 'nav'
 		'container_tag_class'	=> 'nav nav-pills pull-right'
-		//'container_tag_class'	=>'nav'
+		//'container_tag_class'	=> 'nav'
 	);
 
 	$this->fuelmenu->initialize($param);
@@ -20,13 +20,12 @@
 
 <head>
 
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	
 	<title>Main</title>
 
 	<?php
-		$this->carabiner->display('jquery');
-		$this->carabiner->display('bootstrap2.3.1');
+		$this->carabiner->display('bootstrap3','css');
 	?>
 
 	<style type="text/css">
@@ -53,6 +52,11 @@
 
 		<?php echo $template['body']; ?>
 		<?//php echo $template['partials']['partial']; ?>
+
+		<?php
+		$this->carabiner->display('jquery');
+		$this->carabiner->display('bootstrap3','js');
+		?>
 
 	</div>
 

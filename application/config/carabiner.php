@@ -224,10 +224,10 @@ $config['groups']['bootstrap2.3.2'] = array (
 $config['groups']['bootstrap3'] = array (
 		
 	'js'	=> array (
-		array('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.js','http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js',true,false)
+		array('http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js','http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js',true,false)
 	),
 	'css'	=> array (
-		array('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.css','screen','http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css',true,false),
+		array('http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css','screen','http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css',true,false),
 	)
 );
 
@@ -271,7 +271,6 @@ $config['groups']['jquery'] = array(
 	
 		array('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js', 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', TRUE, FALSE)
 		//array('http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', TRUE, FALSE)
-	
 	)
 );
 

@@ -6,15 +6,8 @@ class Main extends Main_Controller {
 		
 		parent::__construct();
 
-		$this->template->set_layout('MainLayout');
-		$this->template->set_partial('partial', 'partials/testPartial');
 
-		$menu = array(
-			'main'		=> 'Main',
-			'user'		=> 'User',
-			'admin'		=> 'Admin'
-		);
-
+		$menu = array('main' => 'Main', 'user' => 'User', 'admin' => 'Admin');
 		$this->template->set('menu', $menu);
 	}
 
@@ -25,7 +18,6 @@ class Main extends Main_Controller {
 	}
 
 	private function _tmp() {
-
 		//$this->ion_auth->login('admin', 'admin@admin.com', true);
 		//$user = $this->ion_auth->user()->row();
 		//$users = $this->ion_auth->users()->result();

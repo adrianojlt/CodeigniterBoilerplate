@@ -15,9 +15,9 @@
     <?php
 		//$this->carabiner->display('jquery');
 		//$this->carabiner->display('bootstrap2.3.1');
-		//$this->carabiner->display('bootstrap3');
-		foreach ($assets as $asset) {$this->carabiner->display($asset,null); }
-		$this->carabiner->display();
+		//foreach ($assets as $asset) {$this->carabiner->display($asset,null); }
+		//$this->carabiner->display();
+		$this->carabiner->display('bootstrap3','css');
     ?>
 
     <!-- bootstrap adjustment -->
@@ -27,9 +27,7 @@
         	/*padding-bottom: 40px;*/
         	min-height: 2000px;
       	}
-
       	.navbar-static-top {margin-bottom: 19px; }
-
       	/* .sidebar-nav {padding: 9px 0; } */
     </style>
 
@@ -44,10 +42,8 @@
 	<?php echo $template['body']; ?>
 
 	<?php
-		//$this->carabiner->display('jquery');
-		//$this->carabiner->display('bootstrap2.3.1');
-		//$this->carabiner->display('bootstrap3');
-		//$this->carabiner->display();
+		$this->carabiner->display('jquery');
+		$this->carabiner->display('bootstrap3','js');
 	?>
 
 </body>

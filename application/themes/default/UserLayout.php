@@ -20,31 +20,43 @@
 
 <head>
 
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	
 	<title>Main</title>
 
-	<?php $this->carabiner->display('bootstrap3', 'css'); ?>
+	<?php
+		$this->carabiner->display('bootstrap3','css');
+	?>
 
 	<style type="text/css">
-
-		
+		body {padding-top: 20px; padding-bottom: 40px; }
+		/* Custom container */
+		.container-narrow {margin: 0 auto; max-width: 700px; }
+		.container-narrow > hr {margin: 30px 0; }
 	</style>
 
 </head>
 
 <body>
 
-	<div class="container">
+	<div class="container-narrow">
 
-		<?php echo $template['partials']['UserMainMenu']; ?>
+		<div class="masthead">
+			<?//php echo $menuHTML; ?>
+			<h3 class="muted">Project Name</h3>
+		</div>
+
+		<hr>
 
 		<?php echo $template['body']; ?>
 
 	</div>
-
-	<?php $this->carabiner->display('jquery'); ?>
-	<?php $this->carabiner->display('bootstrap3','js'); ?>
 						
+	<?php
+		$this->carabiner->display('jquery');
+		$this->carabiner->display('bootstrap3','js');
+	?>
+
 </body>
 
 </html>

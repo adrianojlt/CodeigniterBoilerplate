@@ -3,6 +3,6 @@
 ?>
 
 <div id="container">
-	<h1>Index</h1>
+	<h1>Client</h1>
 </div>
 
