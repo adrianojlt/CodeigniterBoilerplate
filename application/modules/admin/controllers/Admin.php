@@ -10,31 +10,30 @@ class Admin extends Admin_Controller {
 		//$this->template->set_partial('AdminNavBar', 'partials/AdminNavBar');
 		//$this->template->set_partial('AdminNavBar', 'partials/AdminB3NavBar');
 		//$this->template->set_partial('AdminSideBar', 'partials/AdminSideBar');
-
 		//$this->carabiner->css('adminStyle.css');
 	}
 
 	public function index()
 	{
-		$this->template->set('assets',array('jquery','bootstrap3'));
+		$this->template->set('assets',array());
 		$this->template->build('AdminBodyIndex');
 	}
 
 	public function users() 
 	{
-		$this->template->set('assets',array('jquery','bootstrap3'));
+		$this->template->set('assets',array());
 		$this->template->build('AdminBodyUsers');
 	}
 
 	public function calendar() 
 	{
-		$this->template->set('assets',array('jquery','bootstrap3'));
+		$this->template->set('assets',array());
 		$this->template->build('AdminBodyCalendar');
 	}
 
 	public function test() 
 	{
-		$this->template->set('assets',array('jquery','bootstrap3'));
+		$this->template->set('assets',array());
 		$this->template->build('AdminBodyTest');
 	}
 
@@ -45,7 +44,7 @@ class Admin extends Admin_Controller {
 
 	public function systemSettings()
 	{
-		$this->template->set('assets',array('jquery','bootstrap3'));
+		$this->template->set('assets',array());
 		$this->template->build('AdminBodySystemSettings');
 	}
 
@@ -56,7 +55,6 @@ class Admin extends Admin_Controller {
 
 	public function tmp() {
 		//$this->firephp->log($active,'active');
-
 	}
 }
 

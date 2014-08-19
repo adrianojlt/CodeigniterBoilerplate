@@ -1,9 +1,10 @@
 <?php
 	//$this->firephp->log(site_url('admin/index'),'url');
 ?>
-<nav class="navbar navbar-default" role="navigation">
+<div class="navbar navbar-default navbar-static-top" role="navigation">
 
-	<div class="container-fluid">
+	<!--<div class="container-fluid">-->
+	<div class="container">
 
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -17,12 +18,15 @@
 	  	</div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
 
 	    	<ul class="nav navbar-nav">
 
 				<li class="<?php if ( $this->uri->segment(2) == 'index' or !$this->uri->segment(2) ) {?>active<?php } ?>">
 					<a href="<?php echo site_url('user/index'); ?>">Principal</a>
+				</li> 
+				<li class="<?php if ( $this->uri->segment(2) == 'timesheet' ) {?>active<?php } ?>">
+					<a href="<?php echo site_url('user/timesheet'); ?>">Timesheet</a>
 				</li> 
 				<li class="<?php if ( $this->uri->segment(2) == 'client' ) {?>active<?php } ?>">
 					<a href="<?php echo site_url('user/client'); ?>">Cliente</a>
@@ -65,6 +69,7 @@
 
 	    </div><!-- /.navbar-collapse -->
 
-	</div><!-- /.container-fluid -->
+	<!--</div>--><!-- /.container-fluid -->
+	</div><!-- /.container -->
 
-</nav>
+</div>	

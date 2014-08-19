@@ -51,7 +51,7 @@
 		<hr>
 
 		<?php echo $template['body']; ?>
-		<?//php echo $template['partials']['partial']; ?>
+		<?php //echo $template['partials']['partial']; ?>
 
 		<?php
 		$this->carabiner->display('jquery');

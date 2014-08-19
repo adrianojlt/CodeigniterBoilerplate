@@ -13,11 +13,9 @@
 	<title>Admin</title>
 
     <?php
-		//$this->carabiner->display('jquery');
-		//$this->carabiner->display('bootstrap2.3.1');
-		//foreach ($assets as $asset) {$this->carabiner->display($asset,null); }
-		//$this->carabiner->display();
 		$this->carabiner->display('bootstrap3','css');
+		foreach ( $assets as $lib ) {$this->carabiner->display($lib,'css'); }
+		$this->carabiner->display('css');
     ?>
 
     <!-- bootstrap adjustment -->
@@ -41,10 +39,10 @@
 	<?php //echo $template['partials']['AdminSideBar']; ?>
 	<?php echo $template['body']; ?>
 
-	<?php
-		$this->carabiner->display('jquery');
-		$this->carabiner->display('bootstrap3','js');
-	?>
+	<?php $this->carabiner->display('jquery'); ?>
+	<?php $this->carabiner->display('bootstrap3','js'); ?>
+	<?php $this->carabiner->display('js'); ?>
+	<?php foreach ( $assets as $lib ) { $this->carabiner->display($lib,'js'); } ?>
 
 </body>
 

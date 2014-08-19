@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Tables extends Admin_Controller {
+class Timesheets extends Admin_Controller {
 
 	public function __construct() {
 
@@ -11,30 +11,20 @@ class Tables extends Admin_Controller {
 
 	public function index()
 	{
-
-
 		$this->template->set('assets',array());
 
 		//$this->carabiner->js('admin/tables.js');
 		//$this->carabiner->css('school.css');
 
-		$this->template->build('AdminBodyJtable');
+		$this->template->build('content/timesheets/AdminBodyTimesheets');
 	}
 
-	public function jtable() {
+	public function client( $id = 0 ) {
 
-		$this->template->set('assets',array());
+	}
 
-		//$this->carabiner->js('admin/tables.js');
+	public function user( $id = 0 ) {
 		
-		$this->template->build('AdminBodyJtable');
-	}
-
-	public function datatables() {
-
-		$this->template->set('assets',array());
-
-		$this->template->build('AdminBodyJtable');
 	}
 
 	public function tmp() {

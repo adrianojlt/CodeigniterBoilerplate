@@ -6,11 +6,23 @@ class Admin_Controller extends MX_Controller {
 
 		parent::__construct();
 
-		$this->template->set_layout('AdminLayout');
-		$this->template->set_partial('AdminNavBar', 'partials/AdminB3NavBar');
-		//$this->template->set_partial('AdminSideBar', 'partials/AdminSideBar');
+		$this->set_default_layout();
+		//$this->set_sb2_layout();
 
 		//if (!$this->ion_auth->is_admin()) redirect('Login/index');
+	}
+
+	private function set_default_layout() {
+		$this->template->set_theme('default');
+		$this->template->set_layout('AdminLayout');
+		$this->template->set_partial('AdminNavBar', 'partials/AdminB3NavBar');
+
+	}
+
+	private function set_sb2_layout() {
+		$this->template->set_theme('default');
+		$this->template->set_layout('AdminSB2Layout');
+		$this->template->set_partial('AdminNavBar', 'partials/AdminSB2NavBar');
 	}
 	
 	public function logout() {

@@ -26,24 +26,25 @@
 	<?php $this->carabiner->display('bootstrap3', 'css'); ?>
 
 	<style type="text/css">
-
-		
+		body { min-height: 2000px; }
+		.navbar-static-top {margin-bottom: 19px; }
 	</style>
 
 </head>
 
 <body>
 
-	<div class="container">
+	<!--<div class="container">-->
 
 		<?php echo $template['partials']['UserMainMenu']; ?>
 
 		<?php echo $template['body']; ?>
 
-	</div>
+	<!--</div>-->
 
 	<?php $this->carabiner->display('jquery'); ?>
 	<?php $this->carabiner->display('bootstrap3','js'); ?>
+	<?php $this->carabiner->display('js'); ?>
 						
 </body>
 
